@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Survey Form</title>
+  </head>
+
+  <body>
+    <main>
+        <header>
+            <h1 id="title" class="title">Travel Survey</h1>
+            <p id="description" class="description">Thank you for helping us understand where travellers want to go</p>
+        </header>
+
+<form id="survey-form" class="survey">
+  <div class="form-group">
+  <label for="name" id="name-label">Name</label>
+  <input id="name" placeholder="Enter your name" type="text" required/>
+  <label for="email" id="email-label">Email</label>
+  <input id="email" placeholder="Enter your email" type="email" required/>
+  <label for="age" id="number-label">Age (optional)</label>
+  <input id="number" placeholder="Age" type="number" min="10" max="99"/>
+  </div>
+  
+  <div class="form-group">
+  <p>What is your main goal when you travel?</p>
+  <select id="dropdown" name="goal" required>
+    <option disabled selected value>Select</option>
+    <option>Relaxation</option>
+    <option>Adventure</option>
+    <option>Trying new things</option>
+    <option>Experiencing other cultures</option>
+    <option>Eating exotic food</option>
+  </select>
+  </div>
+  
+  <div class="form-group">
+    <p>Do you usually travel alone or with others?</p>
+    <label>
+      <input name="travel-group" value="alone" type="radio" class="input-radio" checked>
+      Alone
+    </label>
+     <label>
+      <input name="travel-group" value="with-family" type="radio" class="input-radio">
+      With family
+    </label>
+     <label>
+      <input name="travel-group" value="with-friends" type="radio" class="input-radio">
+      With friends
+    </label>
+  </div>
+  
+  <div class="form-group">
+  <p>What is your least favorite thing about travelling?</p>
+  <select id="dropdown" name="travel-peeves" required>
+    <option disabled selected value>Select</option>
+    <option value="language-barriers">Language barriers</option>
+    <option value="uncomfortable-flights">Uncomfortable flights</option>
+    <option value="packing">Packing</option>
+    <option value="expenses">Expenses</option>
+  </select>
+  </div>
+  
+  <div class="form-group">
+    <p>Where do you like to travel? (Check all that apply)</p>
+    <label>
+      <input name="prefer" value="own-country" type="checkbox" class="input-checkbox">
+      Within your own country
+    </label>
+    <label>
+      <input name="prefer" value="not-own-country" type="checkbox" class="input-checkbox">
+      Outside your country
+    </label>
+    <label>
+      <input name="prefer" value="urban-cities" type="checkbox" class="input-checkbox">
+      Urban cities
+    </label>
+    <label>
+      <input name="prefer" value="wilderness" type="checkbox" class="input-checkbox">
+      Wilderness
+    </label>
+    <label>
+      <input name="prefer" value="beaches" type="checkbox" class="input-checkbox">
+      Somewhere with lots of beaches
+    </label>
+    <label>
+      <input name="prefer" value="food" type="checkbox" class="input-checkbox">
+      Somewhere with great food
+    </label>
+    <label>
+      <input name="prefer" value="art" type="checkbox" class="input-checkbox">
+      Somewhere with amazing art
+    </label>
+    <label>
+      <input name="prefer" value="shows" type="checkbox" class="input-checkbox">
+      Somewhere with awesome shows
+    </label>
+    <label>
+      <input name="prefer" value="resorts-cruises" type="checkbox" class="input-checkbox">
+      Resorts / Cruises
+    </label>
+    <label>
+      <input name="prefer" value="family-friends" type="checkbox" class="input-checkbox">
+      Where your family/friends live
+    </label>
+    <label>
+      <input name="prefer" value="theme-parks" type="checkbox" class="input-checkbox">
+      Theme parks
+    </label>
+  </div>
+  
+  <div class="form-group">
+    <p>Anything else to share?</p>
+    <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter thoughts here"></textarea>
+  </div>
+  
+  <button id="submit" class="submit-button" type="submit">Submit</submit>
+</form>
+    </main>
+  </body>
+</html>
